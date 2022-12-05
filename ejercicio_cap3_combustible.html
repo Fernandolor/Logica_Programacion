@@ -1,0 +1,40 @@
+<meta charset="UTP-8">
+<br>
+<center><h2>Rendimiento de Combustible</h2></center>
+Pregunta:
+<br>
+Un vehiculo con un tanque de 40 litros recorre 480km con gasolina
+y 300km con alcohol, demostrar con cual combustible hay mayor economia.
+<br>
+<br>
+
+<script>
+
+	function salto () {
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	var tanque = 40
+	var gas = 480
+	var alcohol = 300
+	var renGas = gas / tanque 
+	var renAlc = alcohol / tanque
+
+	document.write("Capacidad del tanque: " + tanque + " litros")
+	salto()
+	document.write("Distancia recorrida con gasolina: " + gas + " km")
+	salto()
+	document.write("Distancia recorrida con alcohol: " + alcohol + " km")
+	salto()
+	document.write("Rendimiento Gasolina: " + renGas + " litros")
+	salto()
+	document.write("Rendimiento Alcohol: " + renAlc + " litros")
+	salto()
+	
+	 if (renGas>renAlc)
+		document.write("Hay mayor economia utilizando: " + "Gasolina")
+	else 
+		document.write("Hay mayor economia utilizando: " + "Alcohol")
+
+</script>
